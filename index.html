@@ -7,6 +7,7 @@
         <meta name="generator" content="Vim">
 
         <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/movesScreen.css">
 
         <!-- EXTERNAL SCRIPTS-->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> -->
@@ -24,18 +25,18 @@
 
 </HEAD>
 <BODY>
-	<div id="timer"></div>
-	<div>
-		<div class="moves_container">
-			<div id="color_panel"></div>
-			<div id="actions_container">
-				<div id="public_action_panel"></div>
-				<div id="private_action_panel"></div>
+	<div id="timer"><span>OMINOUS COUNTDOWN GOES HERE</span></div>
+	<div id="main_moves_container" class="moves_container row">
+		<div id="big_inner_moves_container" class="moves_container column">
+			<div id="color_panel" class="moves_panel">COLOR POSTS GO HERE</div>
+			<div class="moves_container row">
+				<div id="public_action_panel" class="moves_panel">PUBLIC ACTION</div>
+				<div id="private_action_panel" class="moves_panel">PRIVATE ACTION</div>
 			</div>
-			<div id="maneuver_panel"></div>
+			<div id="maneuver_panel" class="moves_panel">MANEUVER</div>
 		</div>
-		<div class="moves_container">
-			<div id="communication_panel"></div>
+		<div id="small_inner_moves_container" class="moves_container">
+			<div id="communication_panel" class="moves_panel">COMS</div>
 		</div>
 	</div>
 </BODY>

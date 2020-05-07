@@ -1,0 +1,61 @@
+/* TIMER */
+#timer{
+	text-align: center;
+}
+	#timer span{
+		color: red;
+		font-size: x-large;
+	}
+
+
+/* MOVES CONTAINER */
+.moves_container{
+	height: 700px;
+}
+
+	.moves_container.column{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.moves_container.row{
+		display: flex;
+		flex-direction: row;
+	}
+
+.moves_panel{
+	margin: 2px;
+}
+
+#main_moves_container{
+	width:60%;
+	margin:auto;
+}
+
+#big_inner_moves_container{
+	width: 75%;
+}
+#small_inner_moves_container{
+	width: 25%;
+}
+
+#color_panel{
+	background-color: orange;
+	height: 40%;
+}
+#public_action_panel{
+	background-color: green;
+	width: 50%;
+}
+#private_action_panel{
+	background-color: blue;
+	width: 50%;
+}
+#maneuver_panel{
+	background-color: purple;
+	height: 40%;
+}
+#communication_panel{
+	background-color: yellow;
+	height: 100%;
+}
