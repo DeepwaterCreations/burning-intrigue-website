@@ -15,12 +15,12 @@
 
 	.moves_container.column{
 		display: flex;
-		flex-direction: column;
+		flex-flow: column nowrap;
 	}
 
 	.moves_container.row{
 		display: flex;
-		flex-direction: row;
+		flex-flow: row nowrap;
 	}
 
 .moves_panel{
