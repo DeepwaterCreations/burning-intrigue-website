@@ -17,6 +17,7 @@
         <script src="externals/angular-sanitize.js"></script>
 
         <!-- INTERNAL SCRIPTS -->
+	<script src="scripts/moves_page.js"></script>
 
         <!-- CONTROLLERS -->
         <script>
@@ -28,7 +29,9 @@
 	<div id="timer"><span>OMINOUS COUNTDOWN GOES HERE</span></div>
 	<div id="main_moves_container" class="moves_container row">
 		<div id="big_inner_moves_container" class="moves_container column">
-			<div id="color_panel" class="moves_panel">COLOR POSTS GO HERE</div>
+			<div id="color_panel" class="moves_panel" onclick="maximize('color_panel.html')">
+				COLOR POSTS GO HERE
+			</div>
 			<div class="moves_container row">
 				<div id="public_action_panel" class="moves_panel">PUBLIC ACTION</div>
 				<div id="private_action_panel" class="moves_panel">PRIVATE ACTION</div>

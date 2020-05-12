@@ -59,3 +59,41 @@
 	background-color: yellow;
 	height: 100%;
 }
+
+
+
+.move_maximized_panel{
+	width: 60%;
+	height: 700px;
+	margin: auto;
+}
+/* COLOR PAGE */
+
+#color_maximized{
+	background-color: orange;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+	/* #color_maximized [contenteditable]{ */
+	/* #color_maximized input[type="text"]{ */
+	#color_maximized textarea{
+		background-color: white;
+		border-style: solid;
+		margin: auto 1em;
+		/* height: 90%; */
+		height: auto;
+		width: 90%;
+		resize: none;
+		overflow: hidden;
+	}
+
+	#color_maximized input[type="button"]{
+		width: auto;
+		margin: auto;
+		padding: 1em 2em;
+		border-style: none;
+		background-color: white;
+	}
+
+
