@@ -17,6 +17,15 @@
 </HEAD>
 <BODY style="background-color:gray">
 	<a href="{{ url_for('login') }}">Log In</a>
+	{% with messages = get_flashed_messages() %}
+	{% if messages %}
+	<ul>
+		{% for message in messages %}
+		<li>{{ message }}</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+	{% endwith %}
 	<div id="timer"><span>OMINOUS COUNTDOWN GOES HERE</span></div>
 	{% block content %}{% endblock %}
 </BODY>
