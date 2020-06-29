@@ -16,7 +16,12 @@
 
 </HEAD>
 <BODY style="background-color:gray">
+	{% if current_user.is_anonymous %}
 	<a href="{{ url_for('login') }}">Log In</a>
+	{% else %}
+	<a href="{{ url_for('logout') }}">Log Out</a>
+	{% endif %}
+
 	{% with messages = get_flashed_messages() %}
 	{% if messages %}
 	<ul>
@@ -26,6 +31,10 @@
 	</ul>
 	{% endif %}
 	{% endwith %}
+
+	{% if not current_user.is_anonymous %}
+	<span>{{ current_user.username }}</span>
+	{% endif %}
 	<div id="timer"><span>OMINOUS COUNTDOWN GOES HERE</span></div>
 	{% block content %}{% endblock %}
 </BODY>
